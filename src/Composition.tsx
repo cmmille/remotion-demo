@@ -5,6 +5,7 @@ import {Title} from './Title';
 import {z} from 'zod';
 import {zColor} from '@remotion/zod-types';
 import FrameCounter from './FrameCounter';
+import Dragon from './Dragon';
 
 export const myCompSchema = z.object({
 	titleText: z.string(),
@@ -25,6 +26,7 @@ export const MyComposition: React.FC<z.infer<typeof myCompSchema>> = ({
 			<Title titleText={propOne} titleColor={propTwo} />
 			<Subtitle />
 			<FrameCounter />
+			<Dragon />
 		</AbsoluteFill>
 	);
 };
