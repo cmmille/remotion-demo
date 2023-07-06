@@ -1,11 +1,11 @@
 import {FaDragon} from 'react-icons/fa';
-import Zoom from './animations/Zoom';
+import ZoomInFadeOut from './animations/ZoomInFadeOut';
 
 const Dragon = () => {
 	return (
-		<Zoom time={2}>
+		<ZoomInFadeOut duration={4}>
 			<FaDragon className="text-[20rem] text-green-400" />
-		</Zoom>
+		</ZoomInFadeOut>
 	);
 };
 
